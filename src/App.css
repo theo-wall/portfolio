@@ -15,6 +15,15 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
-.terminal-header {
+.terminal-content {
     color: rgb(255, 255, 255);
+}
+
+.terminal-header {
+    padding: 0 50px 0 50px;
+    white-space: break-spaces;
+    font-size: calc(1vw + 7px);
+    font-weight: 900;
+    color: whitesmoke;
+  text-shadow: 0 0 5px whitesmoke;
 }

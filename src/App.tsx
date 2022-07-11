@@ -3,7 +3,21 @@ import "./App.css";
 import TerminalDisplay from "./components/TerminalDisplay";
 
 const year = () => new Date().getFullYear();
-const welcomeMessage = "***Theo Walls portfolio in progress***";
+const copyWrite = () => {
+  return <p>sdkfjlskdf</p>;
+};
+const welcomeMessage = `
+#============================================#
+#  ________              _      __     ____  #
+# /_  __/ /  ___ ___    | | /| / /__ _/ / /  #
+#  / / / _ \\/ -_) _ \\   | |/ |/ / _ \`/ / /   #
+# /_/ /_//_/\\__/\\___/   |__/|__/\\_,_/_/_/    #
+#                                            #
+#   © ${year()}                                   #
+#                                            #
+#============================================#
+                                                                                                               
+`;
 
 const subText = `${year()}`;
 
@@ -11,13 +25,11 @@ const prompt = ">";
 
 function App() {
   return (
-    <div className="terminal-backdrop">
-      <TerminalDisplay
-        welcomeMessage={welcomeMessage}
-        subText={subText}
-        prompt={prompt}
-      />
-    </div>
+    <TerminalDisplay
+      welcomeMessage={welcomeMessage}
+      subText={subText}
+      prompt={prompt}
+    />
   );
 }
 

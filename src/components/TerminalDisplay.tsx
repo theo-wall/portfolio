@@ -1,3 +1,6 @@
+import "../App.css";
+import Header from "./Header";
+
 type TerminalProps = {
   welcomeMessage: string;
   subText: string;
@@ -6,10 +9,11 @@ type TerminalProps = {
 
 const TerminalDisplay = (props: TerminalProps) => {
   return (
-    <div className="terminal-header">
-      <p>{props.welcomeMessage}</p>
-      <p>&copy; {props.subText}</p>
-      <p>{props.prompt}</p>
+    <div className="terminal-backdrop">
+      <div className="terminal-content">
+        <Header welcomeMessage={props.welcomeMessage} subText={props.subText} />
+        <p>{props.prompt}</p>
+      </div>
     </div>
   );
 };
