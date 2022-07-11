@@ -1,22 +1,22 @@
+import "./App.css";
 
+import TerminalDisplay from "./components/TerminalDisplay";
 
+const year = () => new Date().getFullYear();
+const welcomeMessage = "***Theo Walls portfolio in progress***";
+
+const subText = `${year()}`;
+
+const prompt = ">";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="terminal-backdrop">
+      <TerminalDisplay
+        welcomeMessage={welcomeMessage}
+        subText={subText}
+        prompt={prompt}
+      />
     </div>
   );
 }
