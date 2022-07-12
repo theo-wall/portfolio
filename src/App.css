@@ -1,5 +1,5 @@
 .terminal-backdrop {
-    height: 100vh;
+    /* height: 100vh;
     content: " ";
     display: block;
     position: absolute;
@@ -12,12 +12,13 @@
     background-size: 100% 2px, 3px 100%;
     pointer-events: none;
 
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;  */
 }
 
 
 .terminal-banner {
     padding: 0 50px 0 50px;
+    margin: 0;
     white-space: break-spaces;
     font-size: calc(1vw + 7px);
     font-weight: 900;
@@ -26,30 +27,58 @@
 }
 
 .terminal-header {
-    display: flex;
     font-size: calc(0.3vw);
     font-weight: 900;
     color: whitesmoke;
   text-shadow: 0 0 5px whitesmoke;
 }
 
+.logo-container {
+      display: flex;
+      padding-left: 5px;
+}
+
 .gitHub-logo {
-    text-shadow: 0 0 10px whitesmoke;
-    font-weight: 900;
-    color: whitesmoke;
-  text-shadow: 0 0 5px whitesmoke;
-}
-.linkedIn-logo {
-    text-shadow: 0 0 10px whitesmoke;
-    font-weight: 900;
-    color: whitesmoke;
-  text-shadow: 0 0 5px whitesmoke;  
-}
-.mail-logo {
-    text-shadow: 0 0 10px whitesmoke;
+    font-size: 4px;
     font-weight: 900;
     color: whitesmoke;
     text-shadow: 0 0 5px whitesmoke;
+}
+
+.gitHub-logo:hover {
+    font-weight: 900;
+    color: whitesmoke;
+    text-shadow: 0 0 15px white;
+    cursor: pointer;
+}
+
+.linkedIn-logo {
+  font-size: 6px;
+    font-weight: 900;
+    color: whitesmoke;
+    text-shadow: 0 0 5px whitesmoke;  
+}
+
+.linkedIn-logo:hover {
+    font-weight: 900;
+    color: whitesmoke;
+    text-shadow: 0 0 15px whitesmoke;  
+    cursor: pointer;
+}
+
+.mail-logo {
+  font-size: 7px;
+    font-weight: 900;
+    color: whitesmoke;
+    text-shadow: 0 0 5px whitesmoke;
+}
+
+.mail-logo:hover {
+    /* font-size: 4px; */
+    font-weight: 900;
+    color: whitesmoke;
+    text-shadow: 0 0 15px whitesmoke;
+    cursor: pointer;
 }
 
 .subText-typing {

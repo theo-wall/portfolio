@@ -7,7 +7,7 @@ type HeaderProps = {
 };
 
 const gitHub = `
-                 :~7JY5PPPP5YJ7~:                 
+                :~7JY5PPPP5YJ7~:                 
              .~JG#&&&&&&&&&&&&&&#GJ~.             
            :JB&@&&&&&&&&&&&&&&&&&&@&B?:           
          .J#&&&BB#&&&&&&&&&&&&&&#BB&&&#?.         
@@ -28,39 +28,33 @@ const gitHub = `
 `;
 
 const linkedIn = `
-    :JYYYYYYYYYYYYYYYYYYYYYYJ:            
-    ?P55?!!?5555555555555555P?            
-    ?PP!    ~555555555555555P?            
-    ?P5J~::^J5PPPP5PPPPPP555P?            
-    ?P557~~!557!!!J?!~~~7Y55P?            
-    ?P5Y    Y5.           ?5P?            
-    ?P5Y.   Y5.   ^YYY~   .5P?            
-    ?P5Y.   Y5.   JP5PJ   .YP?            
-    ?P5Y.   Y5.   J555J   .YP?            
-    ?P5Y    Y5.   J555J    YP?            
-    ?P557!!!557!!!Y555Y!!!75P?            
-    :JYYYYYYYYYYYYYYYYYYYYYYJ:      
+:JYYYYYYYYYYYYYYYYYYYYYYJ:    
+?P55?!!?5555555555555555P?    
+?PP!    ~555555555555555P?    
+?P5J~::^J5PPPP5PPPPPP555P?    
+?P557~~!557!!!J?!~~~7Y55P?    
+?P5Y    Y5.           ?5P?    
+?P5Y.   Y5.   ^YYY~   .5P?    
+?P5Y.   Y5.   JP5PJ   .YP?    
+?P5Y.   Y5.   J555J   .YP?    
+?P5Y    Y5.   J555J    YP?    
+?P557!!!557!!!Y555Y!!!75P?    
+:JYYYYYYYYYYYYYYYYYYYYYYJ:    
 `;
 
 const mail = `
+.:^^:              :7??~             
+.!!!!!!~.         ^?GGGGG?            
+:7!!!!7??!^    .~7?YGGGGPJ            
+:J?7!!!????7~^!????YGGPYJ7            
+:JJJJ?7????????????J5JJJJ7            
+:JJJJJ7.~7???????7:^JJJJJ7            
+:JJJJJ7   ^7???~:  :JJJJJ7            
+:JJJJJ7     :^.    :JJJJJ7            
+:JJJJJ7            ^JJJJJ7            
+.?JJJJ!            .?JJJJ~            
+ .^~~:              .^~~:             
 
-&PYY?~:....................................:~7YY5B
-5YYYYYJ?~:..............................:~7JYYYYYY
-5YYYYYYYYY?!:........................:~7JYYYYYYYYY
-5YYYYYYYYYYYY?!^..................:~?YYYYYYYYYYYYY
-5YYYYY?JYYYYYYYYJ!^............:!?YYYYYYYYJ??YY555
-5YYY5J:^!7JYYYYYYYYJ7^......^!?YYYYYYYYJ?!~^755555
-5YYY5J::::^!7JYYYYYYYYJ7^^!JYYYYYYYYJ?!~^::.755555
-5YYY5J:::::::^!7JYYYYYYYYYYYYYYYYJ?!~^::....755555
-5YYY5J::::::::::^~7JYYYYYYYYYYJ7!^^:........755555
-5YYY5J::::::::::::^^~7?YYYYJ7!~^:...........755555
-5YYY5J:::::::::::::::^^~!7!~^::.............755555
-5YYY5J:::::::::::::::::::::::::.............755555
-5YYY5J:::::::::::::......::::::.............755555
-5YYY5J::::::::::............:::.............755555
-5YYY5J:::::::...............................755555
-5YYY5J::::..................................755555
-&P5Y5J::............................:::::::.7555P#
 `;
 
 const Header = (props: HeaderProps) => {
@@ -95,12 +89,18 @@ const Header = (props: HeaderProps) => {
   return (
     <>
       <div className="terminal-header">
-        <pre className="terminal-banner">{props.welcomeMessage}</pre>
-        <div className="logos">
-          <pre className="gitHub-logo">{gitHub}</pre>
-          <pre className="linkedIn-logo">{linkedIn}</pre>
-          <pre className="mail-logo">{mail}</pre>
+        <div className="logo-container">
+          <div className="logos">
+            <pre className="gitHub-logo">{gitHub}</pre>
+          </div>
+          <div className="logos">
+            <pre className="linkedIn-logo">{linkedIn}</pre>
+          </div>
+          <div className="logos">
+            <pre className="mail-logo">{mail}</pre>
+          </div>
         </div>
+        <pre className="terminal-banner">{props.welcomeMessage}</pre>
       </div>
 
       <div>
