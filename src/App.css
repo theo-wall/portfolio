@@ -36,6 +36,7 @@
 .logo-container {
       display: flex;
       padding-left: 5px;
+      align-items: flex-end;
 }
 
 .gitHub-logo {
@@ -43,12 +44,18 @@
     font-weight: 900;
     color: whitesmoke;
     text-shadow: 0 0 5px whitesmoke;
+
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .gitHub-logo:hover {
     font-weight: 900;
-    color: whitesmoke;
-    text-shadow: 0 0 15px white;
+    color: #00ff00;
+    text-shadow: 0 0 15px #00ff00;
     cursor: pointer;
 }
 
@@ -57,12 +64,18 @@
     font-weight: 900;
     color: whitesmoke;
     text-shadow: 0 0 5px whitesmoke;  
+
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .linkedIn-logo:hover {
     font-weight: 900;
-    color: whitesmoke;
-    text-shadow: 0 0 15px whitesmoke;  
+    color: #0072b1;
+    text-shadow: 0 0 15px #0072b1;  
     cursor: pointer;
 }
 
@@ -71,13 +84,19 @@
     font-weight: 900;
     color: whitesmoke;
     text-shadow: 0 0 5px whitesmoke;
+
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .mail-logo:hover {
     /* font-size: 4px; */
     font-weight: 900;
-    color: whitesmoke;
-    text-shadow: 0 0 15px whitesmoke;
+    color: #BB001B;
+    text-shadow: 0 0 15px #BB001B;
     cursor: pointer;
 }
 
