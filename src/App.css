@@ -33,6 +33,18 @@
   text-shadow: 0 0 5px whitesmoke;
 }
 
+.terminal-input {
+  color: whitesmoke;
+  font-weight: 900;
+  padding-right: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  background: transparent;
+  border: 0px;
+  outline: none; /* no highlight on focus */
+  width: 100%;
+}
+
 .logo-container {
       display: flex;
       padding-left: 5px;
@@ -54,7 +66,7 @@
 
 .gitHub-logo:hover {
     font-weight: 900;
-    color: #00ff00;
+    /* color: #00ff00; */
     text-shadow: 0 0 15px #00ff00;
     cursor: pointer;
 }
@@ -74,7 +86,7 @@
 
 .linkedIn-logo:hover {
     font-weight: 900;
-    color: #0072b1;
+    /* color: #0073b1; */
     text-shadow: 0 0 15px #0072b1;  
     cursor: pointer;
 }
@@ -95,14 +107,13 @@
 .mail-logo:hover {
     /* font-size: 4px; */
     font-weight: 900;
-    color: #BB001B;
+    /* color: #BB001B; */
     text-shadow: 0 0 15px #BB001B;
     cursor: pointer;
 }
 
 .subText-typing {
     padding: 0 0 0 50px;
-    /* padding-bottom: 40px; */
     font-size: calc(1vw + 7px);
     font-weight: 900;
     color: whitesmoke;
@@ -111,7 +122,6 @@
 
 .explain-typing {
     padding-left: 50px;
-
     font-size: calc(1vw + 7px);
     font-weight: 900;
     color: whitesmoke;
@@ -120,9 +130,28 @@
 
 .input-area {
     padding: 20px 0 0 50px;
+    display: flex;
 }
 
 .input-prompt {
     color: greenyellow;
-    padding-right: 5px;
+}
+
+.resume-container {
+  margin-left: 50px;
+  margin-top: 20px;
+  font-size: calc(1vw + 7px);
+  font-weight: 900;
+}
+
+.resume-link {
+  padding: 20px 20 0 50px;
+  color: whitesmoke;
+  text-shadow: 0 0 5px whitesmoke;
+  text-decoration: none;
+}
+.resume-link:hover {
+  color: whitesmoke;
+  text-shadow: 0 0 5px rgb(72, 60, 139);
+  text-decoration: none;
 }

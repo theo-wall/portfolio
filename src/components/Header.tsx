@@ -22,9 +22,7 @@ const Header = (props: HeaderProps) => {
   };
 
   const options1 = {
-    strings: [
-      "Welcome to my site blah blah blah I'm still working on it but I want a long string here so it looks cool",
-    ],
+    strings: ["Welcome to my site, as you can tell its a work in progress."],
     typeSpeed: 20,
     loop: false,
     cursorChar: "",
@@ -32,10 +30,10 @@ const Header = (props: HeaderProps) => {
 
   const options2 = {
     strings: [
-      "this is now different text check check check check out the inputs",
+      "For now take a look at my resume</a> and come back later. Feel free to type whatever below.",
     ],
     typeSpeed: 20,
-    startDelay: 4000,
+    startDelay: 2000,
     loop: false,
     cursorChar: "",
   };
@@ -93,6 +91,15 @@ const Header = (props: HeaderProps) => {
       <br />
       <div>
         <span className="explain-typing"></span>
+      </div>
+      <div className="resume-container">
+        <a
+          href="/documents/theoWallResume.pdf"
+          download="Theo Wall - Resume"
+          className="resume-link"
+        >
+          Resume
+        </a>
       </div>
     </>
   );
