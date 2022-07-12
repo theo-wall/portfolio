@@ -27,3 +27,30 @@
     color: whitesmoke;
   text-shadow: 0 0 5px whitesmoke;
 }
+
+.subText-typing {
+    padding: 0 0 0 50px;
+    /* padding-bottom: 40px; */
+    font-size: calc(1vw + 7px);
+    font-weight: 900;
+    color: whitesmoke;
+  text-shadow: 0 0 5px whitesmoke;
+}
+
+.explain-typing {
+    padding-left: 50px;
+
+    font-size: calc(1vw + 7px);
+    font-weight: 900;
+    color: whitesmoke;
+  text-shadow: 0 0 5px whitesmoke;
+}
+
+.input-area {
+    padding: 20px 0 0 50px;
+}
+
+.input-prompt {
+    color: greenyellow;
+    padding-right: 5px;
+}

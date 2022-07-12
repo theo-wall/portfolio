@@ -3,9 +3,7 @@ import "./App.css";
 import TerminalDisplay from "./components/TerminalDisplay";
 
 const year = () => new Date().getFullYear();
-const copyWrite = () => {
-  return <p>sdkfjlskdf</p>;
-};
+
 const welcomeMessage = `
 #============================================#
 #  ________              _      __     ____  #
@@ -13,7 +11,7 @@ const welcomeMessage = `
 #  / / / _ \\/ -_) _ \\   | |/ |/ / _ \`/ / /   #
 # /_/ /_//_/\\__/\\___/   |__/|__/\\_,_/_/_/    #
 #                                            #
-#   © ${year()}                                   #
+# © ${year()} ----------------------------------- #
 #                                            #
 #============================================#
                                                                                                                
@@ -21,7 +19,7 @@ const welcomeMessage = `
 
 const subText = `${year()}`;
 
-const prompt = ">";
+const prompt = "→";
 
 function App() {
   return (

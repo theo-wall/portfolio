@@ -1,5 +1,6 @@
 import "../App.css";
 import Header from "./Header";
+import TerminalInput from "./TerminalInput";
 
 type TerminalProps = {
   welcomeMessage: string;
@@ -12,7 +13,7 @@ const TerminalDisplay = (props: TerminalProps) => {
     <div className="terminal-backdrop">
       <div className="terminal-content">
         <Header welcomeMessage={props.welcomeMessage} subText={props.subText} />
-        <p>{props.prompt}</p>
+        <TerminalInput prompt={props.prompt} />
       </div>
     </div>
   );
