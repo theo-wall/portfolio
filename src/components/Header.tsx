@@ -1,5 +1,5 @@
 import Typed from "typed.js";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 type HeaderProps = {
   welcomeMessage: string;
@@ -90,7 +90,7 @@ const Header = (props: HeaderProps) => {
       typed1.destroy();
       typed2.destroy();
     };
-  }, []);
+  });
 
   return (
     <>
