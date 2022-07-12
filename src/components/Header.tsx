@@ -17,7 +17,7 @@ const Header = (props: HeaderProps) => {
       window.open("https://www.linkedin.com/in/theo-wall-398452211/");
     }
     if (redirectTo === Redirect.MAIL) {
-      window.open("mailto:theo.wall11@gmail.com");
+      //   window.open("mailto:theo.wall11@gmail.com");
     }
   };
 
