@@ -23,14 +23,14 @@
     font-size: calc(1vw + 7px);
     font-weight: 900;
     color: whitesmoke;
-  text-shadow: 0 0 5px whitesmoke;
+    text-shadow: 0 0 5px whitesmoke;
 }
 
 .terminal-header {
     font-size: calc(0.3vw);
     font-weight: 900;
     color: whitesmoke;
-  text-shadow: 0 0 5px whitesmoke;
+    text-shadow: 0 0 5px whitesmoke;
 }
 
 .terminal-input {
@@ -45,9 +45,15 @@
   width: 100%;
 }
 
+.terminal-output {
+  padding: 20px 20px 0 50px;
+  color: whitesmoke;
+  font-weight: 900;
+}
+
 .logo-container {
       display: flex;
-      padding-left: 5px;
+      padding-left: 45px;
       align-items: flex-end;
 }
 
