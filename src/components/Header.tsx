@@ -1,14 +1,9 @@
 import Typed from "typed.js";
 import { useEffect } from "react";
-import "../constants";
+import { banner } from "../constants";
 import { Redirect, gitHub, linkedIn, mail } from "../constants";
 
-type HeaderProps = {
-  welcomeMessage: string;
-  subText: string;
-};
-
-const Header = (props: HeaderProps) => {
+const Header = () => {
   const redirectHandler = (redirectTo: string): void => {
     if (redirectTo === Redirect.GITHUB) {
       window.open("https://github.com/Theo-Wall");
@@ -82,7 +77,7 @@ const Header = (props: HeaderProps) => {
             </pre>
           </div>
         </div>
-        <pre className="terminal-banner">{props.welcomeMessage}</pre>
+        <pre className="terminal-banner">{banner}</pre>
       </div>
 
       <div>

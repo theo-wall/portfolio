@@ -35,6 +35,8 @@
 
 .terminal-input {
   color: whitesmoke;
+  text-shadow: 0 0 3px whitesmoke;
+  font-size: calc(1vw + 7px);
   font-weight: 900;
   padding-right: 5px;
   font-family: inherit;
@@ -48,7 +50,10 @@
 .terminal-output {
   padding: 20px 20px 0 50px;
   color: whitesmoke;
+  font-size: calc(1vw + 7px);
   font-weight: 900;
+  color: whitesmoke;
+  text-shadow: 0 0 3px whitesmoke;
 }
 
 .logo-container {
@@ -123,7 +128,7 @@
     font-size: calc(1vw + 7px);
     font-weight: 900;
     color: whitesmoke;
-  text-shadow: 0 0 5px whitesmoke;
+    text-shadow: 0 0 3px whitesmoke;
 }
 
 .explain-typing {
@@ -131,16 +136,21 @@
     font-size: calc(1vw + 7px);
     font-weight: 900;
     color: whitesmoke;
-  text-shadow: 0 0 5px whitesmoke;
+    text-shadow: 0 0 3px whitesmoke;
 }
 
 .input-area {
     padding: 20px 0 0 50px;
     display: flex;
+    align-items: center;
+    font-size: calc(1vw + 7px);
+    font-weight: 900;
+    text-shadow: 0 0 5px whitesmoke;
 }
 
 .input-prompt {
     color: greenyellow;
+    font-size: 15px;
 }
 
 .resume-container {
@@ -153,7 +163,7 @@
 .resume-link {
   padding: 20px 20 0 50px;
   color: whitesmoke;
-  text-shadow: 0 0 5px whitesmoke;
+  text-shadow: 0 0 3px whitesmoke;
   text-decoration: none;
 }
 .resume-link:hover {

@@ -1,23 +1,12 @@
 import "../App.css";
+import { commandResponses, validCommands } from "../responses";
 import { useState } from "react";
 import Header from "./Header";
 import TerminalInput from "./TerminalInput";
 import TerminalOutput from "./TerminalOutput";
 
 type TerminalProps = {
-  welcomeMessage: string;
-  subText: string;
   prompt: string;
-};
-
-const validCommands = ["test"];
-
-const commandKeys = ["test"] as const;
-
-type CommandKeys = typeof commandKeys[number];
-
-const commands: { [key in CommandKeys]: JSX.Element } = {
-  test: <p>hello this is a test</p>,
 };
 
 const TerminalDisplay = (props: TerminalProps) => {
@@ -28,16 +17,30 @@ const TerminalDisplay = (props: TerminalProps) => {
     if (validCommands.includes(inputCommand)) {
       switch (inputCommand) {
         case "test":
+        case "all":
+        case "about":
+        case "projects":
+        case "skills":
+        case "repo":
+        case "resume":
+        case "contact":
+        case "website":
+        case "clear":
+        case "help":
           setOutput([
-            <div className="terminal-output">{commands[inputCommand]}</div>,
+            ...output,
+            <div className="terminal-output">
+              {commandResponses[inputCommand]}
+            </div>,
           ]);
       }
     }
   };
+
   return (
     <div className="terminal-backdrop">
       <div className="terminal-content">
-        <Header welcomeMessage={props.welcomeMessage} subText={props.subText} />
+        <Header />
         <TerminalOutput output={output} />
         <TerminalInput
           prompt={props.prompt}
