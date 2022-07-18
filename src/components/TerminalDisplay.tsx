@@ -1,6 +1,6 @@
 import "../App.css";
 import { commandResponses, validCommands } from "../responses";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Header from "./Header";
 import TerminalInput from "./TerminalInput";
 import TerminalOutput from "./TerminalOutput";
@@ -11,7 +11,7 @@ type TerminalProps = {
 
 const TerminalDisplay = (props: TerminalProps) => {
   const [output, setOutput] = useState<(string | JSX.Element)[]>([]);
-
+  const outputRef = useRef<React.MutableRefObject<null>>(null);
   const handleCommand = (input: string) => {
     const inputCommand = input.toLowerCase();
     if (validCommands.includes(inputCommand)) {
@@ -29,12 +29,14 @@ const TerminalDisplay = (props: TerminalProps) => {
         case "help":
           setOutput([
             ...output,
-            <div className="terminal-output">
+            <div className="terminal-output" /*ref={outputRef}*/>
               {commandResponses[inputCommand]}
             </div>,
           ]);
       }
     }
+    // console.log("outputRef.current", outputRef.current.offsetTop);
+    // window.scrollTo({0, outputRef.current})
   };
 
   return (

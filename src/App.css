@@ -15,6 +15,10 @@
     font-family: 'Fira Sans', sans-serif;  */
 }
 
+.terminal-content {
+  padding-bottom: 50px;
+}
+
 
 .terminal-banner {
     padding: 0 50px 0 50px;
