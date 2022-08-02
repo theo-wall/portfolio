@@ -17,7 +17,9 @@ const Header = () => {
   };
 
   const options1 = {
-    strings: ["Welcome to my site, as you can tell its a work in progress."],
+    strings: [
+      "Welcome to my site, my name is Theo Wall and I'm an aspiring Web Developer in Calgary, AB",
+    ],
     typeSpeed: 20,
     loop: false,
     cursorChar: "",
@@ -25,10 +27,10 @@ const Header = () => {
 
   const options2 = {
     strings: [
-      "For now take a look at my resume</a> and come back later. Feel free to type whatever below.",
+      "Try typing some things in to the input to find out more about me, or type 'help' to check out the commands",
     ],
     typeSpeed: 20,
-    startDelay: 2000,
+    startDelay: 3200,
     loop: false,
     cursorChar: "",
   };
@@ -87,7 +89,7 @@ const Header = () => {
       <div>
         <span className="explain-typing"></span>
       </div>
-      <div className="resume-container">
+      {/* <div className="resume-container">
         <a
           href="/documents/theoWallResume.pdf"
           download="Theo Wall - Resume"
@@ -95,7 +97,7 @@ const Header = () => {
         >
           Resume
         </a>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -109,8 +109,27 @@ export const commandResponses: { [key in CommandKeys]: JSX.Element } = {
       </div>
     </>
   ),
-  repo: <p>hello this is a repo page</p>,
-  resume: <p>hello this is a resume page</p>,
+  repo: (
+    <>
+      <p>hello this is a repo page</p>
+    </>
+  ),
+  resume: (
+    <>
+      <p>--- Check out my resume ---</p>
+      <p>
+        Click{" "}
+        <a
+          href="/documents/theoWallResume.pdf"
+          download="Theo Wall - Resume"
+          className="resume-link"
+        >
+          HERE
+        </a>{" "}
+        to download my resume!
+      </p>
+    </>
+  ),
   contact: <p>hello this is a contact page</p>,
   website: <p>hello this is a website page</p>,
   clear: <p>hello this is a clear page</p>,
