@@ -24,7 +24,6 @@ export const validCommands = [
   "resume",
   "contact",
   "website",
-  "clear",
   "help",
 ];
 
