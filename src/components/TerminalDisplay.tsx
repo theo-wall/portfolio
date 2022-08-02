@@ -26,7 +26,6 @@ const TerminalDisplay = (props: TerminalProps) => {
         case "resume":
         case "contact":
         case "website":
-        case "clear":
         case "help":
           const element = (
             <div className="terminal-output">
@@ -39,7 +38,10 @@ const TerminalDisplay = (props: TerminalProps) => {
         window.scrollTo({ top: scroll, left: 0, behavior: "smooth" });
       }, 50);
     } else if (inputCommand === "clear") {
-      setOutput([]);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      setTimeout(() => {
+        setOutput([]);
+      }, 500);
     }
   };
 

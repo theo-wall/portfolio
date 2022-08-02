@@ -155,6 +155,7 @@
 .input-prompt {
     color: greenyellow;
     font-size: 15px;
+    /* margin-right: 4px; */
 }
 
 .resume-container {
@@ -174,4 +175,23 @@
   color: whitesmoke;
   text-shadow: 0 0 5px rgb(72, 60, 139);
   text-decoration: none;
+}
+
+.indent {
+  margin-left: 1em;
+}
+
+.green-text {
+  color: greenyellow;
+  text-shadow: 0 0 5px greenyellow;
+}
+
+.yellow-text {
+  color: yellow;
+  text-shadow: 0 0 5px yellow;
+}
+
+.red-text {
+  color: red;
+  text-shadow: 0 0 5px red;
 }

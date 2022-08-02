@@ -40,7 +40,7 @@ const Header = () => {
       typed1.destroy();
       typed2.destroy();
     };
-  });
+  }, []);
 
   return (
     <>
