@@ -81,6 +81,9 @@ export const commandResponses: { [key in CommandKeys]: JSX.Element } = {
   projects: <p>hello this is a projects page</p>,
   skills: (
     <>
+      <span>
+        <span className="input-prompt">→</span> skills
+      </span>
       <p>--- Languages ---</p>
       <div className="indent">
         <p className="green-text">Javascript/Typescript</p>
@@ -111,11 +114,17 @@ export const commandResponses: { [key in CommandKeys]: JSX.Element } = {
   ),
   repo: (
     <>
+      <span>
+        <span className="input-prompt">→</span> repo
+      </span>
       <p>hello this is a repo page</p>
     </>
   ),
   resume: (
     <>
+      <span>
+        <span className="input-prompt">→</span> resume
+      </span>
       <p>--- Check out my resume ---</p>
       <p>
         Click{" "}
@@ -136,7 +145,7 @@ export const commandResponses: { [key in CommandKeys]: JSX.Element } = {
   help: (
     <>
       <span>
-        <span className="input-prompt">→</span>help
+        <span className="input-prompt">→</span> help
       </span>
       <p>--- Some commands to help you get to know me better ---</p>
       <div className="indent">

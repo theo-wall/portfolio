@@ -1,6 +1,6 @@
 import "../App.css";
 import { commandResponses, validCommands } from "../responses";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "./Header";
 import TerminalInput from "./TerminalInput";
 import TerminalOutput from "./TerminalOutput";
@@ -12,6 +12,10 @@ type TerminalProps = {
 const TerminalDisplay = (props: TerminalProps) => {
   const [output, setOutput] = useState<(string | JSX.Element)[]>([]);
   const [scroll, setScroll] = useState<number>(0);
+
+  useEffect(() => {
+    window.scrollTo({ top: scroll, left: 0, behavior: "smooth" });
+  }, [scroll]);
 
   const handleCommand = (input: string) => {
     const inputCommand = input.toLowerCase();
@@ -34,9 +38,6 @@ const TerminalDisplay = (props: TerminalProps) => {
           );
           setOutput([...output, element]);
       }
-      setTimeout(() => {
-        window.scrollTo({ top: scroll, left: 0, behavior: "smooth" });
-      }, 50);
     } else if (inputCommand === "clear") {
       window.scrollTo({ top: 0, behavior: "smooth" });
       setTimeout(() => {
