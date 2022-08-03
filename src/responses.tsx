@@ -1,28 +1,22 @@
 const commandKeys = [
-  "test",
-  "all",
   "about",
   "projects",
   "skills",
   "repo",
   "resume",
   "contact",
-  "website",
   "help",
 ] as const;
 
 type CommandKeys = typeof commandKeys[number];
 
 export const validCommands = [
-  "test",
-  "all",
   "about",
   "projects",
   "skills",
   "repo",
   "resume",
   "contact",
-  "website",
   "help",
 ];
 
@@ -35,8 +29,6 @@ const handleLink = (link: string) => {
 };
 
 export const commandResponses: { [key in CommandKeys]: JSX.Element } = {
-  test: <p>hello this is a test page</p>,
-  all: <p>hello this is a all page</p>,
   about: (
     <>
       <span>
@@ -93,41 +85,60 @@ export const commandResponses: { [key in CommandKeys]: JSX.Element } = {
       <p>--- A small but growing list of projects! ---</p>
       <div>
         <span className="green-text">Propra</span> - Property Management
-        Software: Junior Full Stack Dev
+        Software -- Junior Full Stack Dev
         <div className="indent">
           <p>
-            Worked with a team to develop accounting software in a react web and
-            mobile app
+            ● Worked with a team to develop accounting software in a react web
+            and mobile app
           </p>
-          <p>Developed full stack features for both web and mobile</p>
+          <p> ● Developed full stack features for both web and mobile</p>
           <p>
-            Responsible for maintaining version control—reviewing and submitting
-            pull requests on GitHub
+            ● Responsible for maintaining version control/reviewing and
+            submitting pull requests on GitHub
           </p>
-          <p>Worked collaboratively with in-person and remote teams</p>
+          <p> ● Worked collaboratively with in-person and remote teams</p>
           <p>
-            Mentored to write clear, concise, and reusable code for use in
+            ● Mentored to write clear, concise, and reusable code for use in
             future features and projects
           </p>
         </div>
       </div>
       <div>
         <span className="green-text">Coyl</span> - Social Media Scheduling and
-        Sales App: Full Stack Dev{" "}
+        Sales App -- Full Stack Dev{" "}
         <div className="indent">
           <p>
-            Worked on a team to develop and app to schedule and post sale items
+            ● Worked on a team to develop an app to schedule and post sale items
             onto instagram, check it out{" "}
-            <a
-              className="resume-link"
+            <button
+              className="button-link"
               onClick={() => {
                 handleLink("https://coyl.herokuapp.com/");
               }}
             >
               HERE
-            </a>{" "}
-            or check out the code in my repos.
+            </button>{" "}
           </p>
+        </div>
+      </div>
+      <div>
+        <span className="green-text">KMaxJewellery</span> - Promotional page for
+        Calgary Jewellery maker Karen Kryzan : Full Stack Dev{" "}
+        <div className="indent">
+          <p>
+            ● Worked with a local artist to remake promotional website and add
+            new features, check it out
+            <button
+              className="button-link"
+              onClick={() => {
+                handleLink("https://coyl.herokuapp.com/");
+              }}
+            >
+              HERE
+            </button>{" "}
+          </p>
+          <p>● Added data base to save/edit/delete posts</p>
+          <p>● rebuilt entire sit from ground up using react and MaterialUI</p>
         </div>
       </div>
     </>
@@ -210,33 +221,33 @@ export const commandResponses: { [key in CommandKeys]: JSX.Element } = {
       <p>--- Contact Me! ---</p>
       <p>
         Email:{" "}
-        <a
-          className="resume-link"
+        <button
+          className="button-link"
           onClick={() => {
             handleEmail();
           }}
         >
           theo.wall11@gmail.com
-        </a>
+        </button>
       </p>
       <p>
-        Phone Number: <a className="resume-link">1(222)-333-4444</a> - Just
-        kidding! Please email me instead and we can figure it out from there!
+        Phone Number: <button className="button-link">1(222)-333-4444</button> -
+        Just kidding! Please email me instead and we can figure it out from
+        there!
       </p>
       <p>
         LinkedIn:{" "}
-        <a
-          className="resume-link"
+        <button
+          className="button-link"
           onClick={() => {
             handleLink("https://www.linkedin.com/in/theo-wall-398452211/");
           }}
         >
           https://www.linkedin.com/in/theo-wall-398452211/
-        </a>
+        </button>
       </p>
     </>
   ),
-  website: <p>hello this is a website page</p>,
   help: (
     <>
       <span>

@@ -21,15 +21,12 @@ const TerminalDisplay = (props: TerminalProps) => {
     const inputCommand = input.toLowerCase();
     if (validCommands.includes(inputCommand)) {
       switch (inputCommand) {
-        case "test":
-        case "all":
         case "about":
         case "projects":
         case "skills":
         case "repo":
         case "resume":
         case "contact":
-        case "website":
         case "help":
           const element = (
             <div className="terminal-output">
