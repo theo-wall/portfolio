@@ -8,7 +8,6 @@ const commandKeys = [
   "resume",
   "contact",
   "website",
-  "clear",
   "help",
 ] as const;
 
@@ -117,7 +116,17 @@ export const commandResponses: { [key in CommandKeys]: JSX.Element } = {
       <span>
         <span className="input-prompt">→</span> repo
       </span>
-      <p>hello this is a repo page</p>
+      <p>--- Repo ---</p>
+      <p>
+        GitHub Repo:{" "}
+        <a
+          href="https://github.com/theo-wall/portfolio"
+          className="resume-link"
+        >
+          https://github.com/theo-wall/portfolio
+        </a>
+      </p>
+      <p>Feel free to check out my other public projects too!</p>
     </>
   ),
   resume: (
@@ -141,7 +150,6 @@ export const commandResponses: { [key in CommandKeys]: JSX.Element } = {
   ),
   contact: <p>hello this is a contact page</p>,
   website: <p>hello this is a website page</p>,
-  clear: <p>hello this is a clear page</p>,
   help: (
     <>
       <span>
@@ -149,13 +157,28 @@ export const commandResponses: { [key in CommandKeys]: JSX.Element } = {
       </span>
       <p>--- Some commands to help you get to know me better ---</p>
       <div className="indent">
-        <p>about - A leetle bit about me</p>
-        <p>projects - some projects I've worked on</p>
-        <p>skills - skills to pay the bills</p>
-        <p>repo - repo for this page</p>
-        <p>resume - my resume</p>
-        <p>contact - contact info</p>
-        <p>clear - make some space</p>
+        <p>
+          <span className="green-text">about</span> - A leetle bit about me
+        </p>
+        <p>
+          <span className="green-text">projects</span> - some projects I've
+          worked on
+        </p>
+        <p>
+          <span className="green-text">skills</span> - skills to pay the bills
+        </p>
+        <p>
+          <span className="green-text">repo</span> - repo for this page
+        </p>
+        <p>
+          <span className="green-text">resume </span> - my resume
+        </p>
+        <p>
+          <span className="green-text">contact</span> - contact info
+        </p>
+        <p>
+          <span className="green-text">clear</span> - make some space
+        </p>
       </div>
     </>
   ),

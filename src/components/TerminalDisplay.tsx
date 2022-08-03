@@ -14,7 +14,7 @@ const TerminalDisplay = (props: TerminalProps) => {
   const [scroll, setScroll] = useState<number>(0);
 
   useEffect(() => {
-    window.scrollTo({ top: scroll, left: 0, behavior: "smooth" });
+    window.scrollTo({ top: scroll, behavior: "smooth" });
   }, [scroll]);
 
   const handleCommand = (input: string) => {
@@ -39,10 +39,7 @@ const TerminalDisplay = (props: TerminalProps) => {
           setOutput([...output, element]);
       }
     } else if (inputCommand === "clear") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-      setTimeout(() => {
-        setOutput([]);
-      }, 500);
+      setOutput([]);
     }
   };
 
