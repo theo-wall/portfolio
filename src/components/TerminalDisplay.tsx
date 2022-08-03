@@ -37,6 +37,17 @@ const TerminalDisplay = (props: TerminalProps) => {
       }
     } else if (inputCommand === "clear") {
       setOutput([]);
+    } else {
+      const element = (
+        <div className="terminal-output">
+          <span>
+            <span className="input-prompt">→</span>
+            {inputCommand}
+          </span>
+          <p>Command not recognized. Try typing "help" for commands</p>
+        </div>
+      );
+      setOutput([...output, element]);
     }
   };
 

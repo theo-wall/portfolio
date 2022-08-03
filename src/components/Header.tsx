@@ -27,7 +27,7 @@ const Header = () => {
 
   const options2 = {
     strings: [
-      "Try typing some things in to the input to find out more about me, or type 'help' to check out the commands",
+      "Try typing something in to the input to find out more about me, or type 'help' to check out the commands",
     ],
     typeSpeed: 20,
     startDelay: 3200,

@@ -131,7 +131,7 @@ export const commandResponses: { [key in CommandKeys]: JSX.Element } = {
             <button
               className="button-link"
               onClick={() => {
-                handleLink("https://coyl.herokuapp.com/");
+                handleLink("https://kmaxjewellery.herokuapp.com/");
               }}
             >
               HERE
