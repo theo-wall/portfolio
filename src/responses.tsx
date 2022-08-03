@@ -127,7 +127,7 @@ export const commandResponses: { [key in CommandKeys]: JSX.Element } = {
         <div className="indent">
           <p>
             ● Worked with a local artist to remake promotional website and add
-            new features, check it out
+            new features, check it out{" "}
             <button
               className="button-link"
               onClick={() => {
