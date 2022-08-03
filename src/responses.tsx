@@ -26,6 +26,14 @@ export const validCommands = [
   "help",
 ];
 
+const handleEmail = () => {
+  window.open("mailto:theo.wall11@gmail.com");
+};
+
+const handleLink = (link: string) => {
+  window.open(link);
+};
+
 export const commandResponses: { [key in CommandKeys]: JSX.Element } = {
   test: <p>hello this is a test page</p>,
   all: <p>hello this is a all page</p>,
@@ -77,7 +85,53 @@ export const commandResponses: { [key in CommandKeys]: JSX.Element } = {
       </div>
     </>
   ),
-  projects: <p>hello this is a projects page</p>,
+  projects: (
+    <>
+      <span>
+        <span className="input-prompt">→</span> projects
+      </span>
+      <p>--- A small but growing list of projects! ---</p>
+      <div>
+        <span className="green-text">Propra</span> - Property Management
+        Software: Junior Full Stack Dev
+        <div className="indent">
+          <p>
+            Worked with a team to develop accounting software in a react web and
+            mobile app
+          </p>
+          <p>Developed full stack features for both web and mobile</p>
+          <p>
+            Responsible for maintaining version control—reviewing and submitting
+            pull requests on GitHub
+          </p>
+          <p>Worked collaboratively with in-person and remote teams</p>
+          <p>
+            Mentored to write clear, concise, and reusable code for use in
+            future features and projects
+          </p>
+        </div>
+      </div>
+      <div>
+        <span className="green-text">Coyl</span> - Social Media Scheduling and
+        Sales App: Full Stack Dev{" "}
+        <div className="indent">
+          <p>
+            Worked on a team to develop and app to schedule and post sale items
+            onto instagram, check it out{" "}
+            <a
+              className="resume-link"
+              onClick={() => {
+                handleLink("https://coyl.herokuapp.com/");
+              }}
+            >
+              HERE
+            </a>{" "}
+            or check out the code in my repos.
+          </p>
+        </div>
+      </div>
+    </>
+  ),
   skills: (
     <>
       <span>
@@ -148,7 +202,40 @@ export const commandResponses: { [key in CommandKeys]: JSX.Element } = {
       </p>
     </>
   ),
-  contact: <p>hello this is a contact page</p>,
+  contact: (
+    <>
+      <span>
+        <span className="input-prompt">→</span> contact
+      </span>
+      <p>--- Contact Me! ---</p>
+      <p>
+        Email:{" "}
+        <a
+          className="resume-link"
+          onClick={() => {
+            handleEmail();
+          }}
+        >
+          theo.wall11@gmail.com
+        </a>
+      </p>
+      <p>
+        Phone Number: <a className="resume-link">1(222)-333-4444</a> - Just
+        kidding! Please email me instead and we can figure it out from there!
+      </p>
+      <p>
+        LinkedIn:{" "}
+        <a
+          className="resume-link"
+          onClick={() => {
+            handleLink("https://www.linkedin.com/in/theo-wall-398452211/");
+          }}
+        >
+          https://www.linkedin.com/in/theo-wall-398452211/
+        </a>
+      </p>
+    </>
+  ),
   website: <p>hello this is a website page</p>,
   help: (
     <>
@@ -158,26 +245,28 @@ export const commandResponses: { [key in CommandKeys]: JSX.Element } = {
       <p>--- Some commands to help you get to know me better ---</p>
       <div className="indent">
         <p>
-          <span className="green-text">about</span> - A leetle bit about me
+          <span className="green-text">about</span> - A little bit about me
         </p>
         <p>
-          <span className="green-text">projects</span> - some projects I've
+          <span className="green-text">projects</span> - Some projects I've
           worked on
         </p>
         <p>
-          <span className="green-text">skills</span> - skills to pay the bills
+          <span className="green-text">skills</span> - Skills to pay the bills
         </p>
         <p>
-          <span className="green-text">repo</span> - repo for this page
+          <span className="green-text">repo</span> - My repo for this page and
+          more!
         </p>
         <p>
-          <span className="green-text">resume </span> - my resume
+          <span className="green-text">resume </span> - My resume, for your
+          pleasure.
         </p>
         <p>
-          <span className="green-text">contact</span> - contact info
+          <span className="green-text">contact</span> - Contact info
         </p>
         <p>
-          <span className="green-text">clear</span> - make some space
+          <span className="green-text">clear</span> - Make some space
         </p>
       </div>
     </>
