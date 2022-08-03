@@ -138,7 +138,10 @@ export const commandResponses: { [key in CommandKeys]: JSX.Element } = {
             </button>{" "}
           </p>
           <p>● Added data base to save/edit/delete posts</p>
-          <p>● rebuilt entire sit from ground up using react and MaterialUI</p>
+          <p>
+            ● Rebuilt entire site from the ground up using ReactJS and
+            MaterialUI
+          </p>
         </div>
       </div>
     </>
