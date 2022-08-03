@@ -12,7 +12,7 @@ const Header = () => {
       window.open("https://www.linkedin.com/in/theo-wall-398452211/");
     }
     if (redirectTo === Redirect.MAIL) {
-      //   window.open("mailto:theo.wall11@gmail.com");
+      window.open("mailto:theo.wall11@gmail.com");
     }
   };
 
@@ -89,15 +89,6 @@ const Header = () => {
       <div>
         <span className="explain-typing"></span>
       </div>
-      {/* <div className="resume-container">
-        <a
-          href="/documents/theoWallResume.pdf"
-          download="Theo Wall - Resume"
-          className="resume-link"
-        >
-          Resume
-        </a>
-      </div> */}
     </>
   );
 };
