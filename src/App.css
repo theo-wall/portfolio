@@ -1,24 +1,6 @@
-.terminal-backdrop {
-    /* height: 100vh;
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-    z-index: 2;
-    background-size: 100% 2px, 3px 100%;
-    pointer-events: none;
-
-    font-family: 'Fira Sans', sans-serif;  */
-}
-
 .terminal-content {
   padding-bottom: 50px;
 }
-
 
 .terminal-banner {
     padding: 0 50px 0 50px;
@@ -81,7 +63,6 @@
 
 .gitHub-logo:hover {
     font-weight: 900;
-    /* color: #00ff00; */
     text-shadow: 0 0 15px #00ff00;
     cursor: pointer;
 }
@@ -101,7 +82,6 @@
 
 .linkedIn-logo:hover {
     font-weight: 900;
-    /* color: #0073b1; */
     text-shadow: 0 0 15px #0072b1;  
     cursor: pointer;
 }
@@ -120,15 +100,12 @@
 }
 
 .mail-logo:hover {
-    /* font-size: 4px; */
     font-weight: 900;
-    /* color: #BB001B; */
     text-shadow: 0 0 15px #BB001B;
     cursor: pointer;
 }
 
 .subText-typing {
-    padding: 0 0 0 50px;
     font-size: calc(1vw + 7px);
     font-weight: 900;
     color: whitesmoke;
@@ -136,7 +113,6 @@
 }
 
 .explain-typing {
-    padding-left: 50px;
     font-size: calc(1vw + 7px);
     font-weight: 900;
     color: whitesmoke;
@@ -155,7 +131,6 @@
 .input-prompt {
     color: greenyellow;
     font-size: 15px;
-    /* margin-right: 4px; */
 }
 
 .resume-container {
@@ -195,4 +170,8 @@
 .red-text {
   color: red;
   text-shadow: 0 0 5px red;
+}
+
+.subText-container {
+  padding-left: 45px;
 }

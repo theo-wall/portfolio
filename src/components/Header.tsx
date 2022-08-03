@@ -82,11 +82,11 @@ const Header = () => {
         <pre className="terminal-banner">{banner}</pre>
       </div>
 
-      <div>
+      <div className="subText-container">
         <span className="subText-typing"></span>
       </div>
       <br />
-      <div>
+      <div className="subText-container">
         <span className="explain-typing"></span>
       </div>
     </>
