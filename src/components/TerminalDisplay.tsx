@@ -44,7 +44,7 @@ const TerminalDisplay = (props: TerminalProps) => {
             <span className="input-prompt">→</span>
             {inputCommand}
           </span>
-          <p>Command not recognized. Try typing "help" for commands</p>
+          <p>Command not recognized. Try typing 'help' for commands</p>
         </div>
       );
       setOutput([...output, element]);
