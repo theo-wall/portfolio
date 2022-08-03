@@ -123,7 +123,7 @@ export const commandResponses: { [key in CommandKeys]: JSX.Element } = {
       </div>
       <div>
         <span className="green-text">KMaxJewellery</span> - Promotional page for
-        Calgary Jewellery maker Karen Kryzan : Full Stack Dev{" "}
+        Calgary Jewellery maker Karen Kryzan -- Full Stack Dev{" "}
         <div className="indent">
           <p>
             ● Worked with a local artist to remake promotional website and add
